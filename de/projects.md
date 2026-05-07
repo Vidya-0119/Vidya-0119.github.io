@@ -2,6 +2,7 @@
 title: "Vidya Vardhini Kurada – Projekte (DE)"
 css: /assets/style.css
 ---
+<div class="projects-page">
 
 # Projekte
 
@@ -49,3 +50,5 @@ Nachfolgend finden Sie ausgewählte Projekte, die meine Fähigkeiten in Analytic
 - Modellierung von Salesforce‑Objekten in analytics‑fähige Data Marts.  
 - Implementierung von Data‑Quality‑Tests und Datenherkunft (Lineage).  
 - Entwicklung von Churn‑ und Umsatzdashboards.
+
+</div>
