@@ -9,7 +9,6 @@ css: "/assets/style.css"
   <a href="projects">Projects</a>
   <a href="#certifications">Certifications</a>
   <a href="/Vidya_Vardhini_Kurada_Data_Analyst_Intern_Latest.pdf">Resume</a>
-  <a href="#contact">Contact</a>
   
   <span class="lang-switch">
     <strong>EN</strong> | <a href="/de/">DE</a>
@@ -176,42 +175,6 @@ css: "/assets/style.css"
   <li>Nature walks around Saarland</li>
   <li>Traveling with friends</li>
 </ul>
-</section>
-
-<section id="contact" class="contact">
-  <h2>🔹 Contact</h2>
-
-  <p>📧 <strong>Email:</strong>
-    <a href="mailto:vidyavardhinikurada@gmail.com">
-      vidyavardhinikurada@gmail.com
-    </a>
-  </p>
-
-  <p>📍 Saarbrücken, Germany</p>
-
-  <p>🔗 <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/vidya-vardhini-kurada-b51629168/" target="_blank">
-      linkedin.com/in/vidya-vardhini-kurada
-    </a>
-  </p>
-
-  <p>🔗 <strong>GitHub:</strong>
-    <a href="https://github.com/Vidya-0119" target="_blank">
-      github.com/Vidya-0119
-    </a>
-  </p>
-
-  <p>🔗 <strong>Trailhead:</strong>
-    <a href="https://www.salesforce.com/trailblazer/vkurada01" target="_blank">
-      Salesforce Trailblazer Profile
-    </a>
-  </p>
-
-  <p>🔗 <strong>Tableau:</strong>
-    <a href="https://public.tableau.com/app/profile/vidya.vardhini.kurada/vizzes" target="_blank">
-      Tableau Public Portfolio
-    </a>
-  </p>
 </section>
 
 
