@@ -9,7 +9,6 @@ css: "/assets/style.css"
   <a href="/de/projects">Projekte</a>
   <a href="#certifications">Zertifikate</a>
   <a href="/Vidya_Vardhini_Kurada_Data_Analyst_Intern_Latest.pdf">Lebenslauf</a>
-  <a href="#contact">Kontakt</a>
 
   <span class="lang-switch">
     <a href="/">EN</a> | <strong>DE</strong>
@@ -17,13 +16,18 @@ css: "/assets/style.css"
 </nav>
 
 <div class="hero">
-  <img src="/assets/Professional Pic.png" alt="Vidya Foto">
-
+  <img src="/assets/Professional Pic.png" alt="Vidya Photo">
   <h1>Vidya Vardhini Kurada</h1>
   <p>Analytics Engineer • Data Analyst • CRM‑Datenexpertin</p>
-</div>
 
-<div class="divider"></div>
+  <div class="contact-buttons">
+    <a href="mailto:vidyavardhinikurada@gmail.com" class="btn">Email</a>
+    <a href="https://www.linkedin.com/in/vidya-vardhini-kurada-b51629168/" target="_blank" class="btn">LinkedIn</a>
+    <a href="https://github.com/Vidya-0119" target="_blank" class="btn">GitHub</a>
+    <a href="https://www.salesforce.com/trailblazer/vkurada01" target="_blank" class="btn">Trailhead</a>
+    <a href="https://public.tableau.com/app/profile/vidya.vardhini.kurada/vizzes" target="_blank" class="btn">Tableau</a>
+  </div>
+</div>
 
 <section>
 <h2>🔹 Über mich</h2>
@@ -167,42 +171,6 @@ css: "/assets/style.css"
   <li>Spaziergänge in der Natur rund um das Saarland</li>
   <li>Reisen mit Freunden</li>
 </ul>
-</section>
-
-<section id="contact" class="contact">
-  <h2>🔹 Kontakt</h2>
-
-  <p>📧 <strong>E‑Mail:</strong>
-    <a href="mailto:vidyavardhinikurada@gmail.com">
-      vidyavardhinikurada@gmail.com
-    </a>
-  </p>
-
-  <p>📍 Saarbrücken, Deutschland</p>
-
-  <p>🔗 <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/vidya-vardhini-kurada-b51629168/" target="_blank">
-      linkedin.com/in/vidya-vardhini-kurada
-    </a>
-  </p>
-
-  <p>🔗 <strong>GitHub:</strong>
-    <a href="https://github.com/Vidya-0119" target="_blank">
-      github.com/Vidya-0119
-    </a>
-  </p>
-
-  <p>🔗 <strong>Trailhead:</strong>
-    <a href="https://www.salesforce.com/trailblazer/vkurada01" target="_blank">
-      Salesforce Trailblazer Profil
-    </a>
-  </p>
-
-  <p>🔗 <strong>Tableau:</strong>
-    <a href="https://public.tableau.com/app/profile/vidya.vardhini.kurada/vizzes" target="_blank">
-      Tableau Public Portfolio
-    </a>
-  </p>
 </section>
 
 <p><em>Diese Seite wurde mit GitHub Pages erstellt und wird unter <strong>kvvardhini.me</strong> gehostet.</em></p>
