@@ -8,7 +8,6 @@ css: "/assets/style.css"
   <a href="/de/">Startseite</a>
   <a href="/de/projects">Projekte</a>
   <a href="#certifications">Zertifikate</a>
-  <a href="/Vidya_Vardhini_Kurada_Data_Analyst_Intern_Latest.pdf">Lebenslauf</a>
 
   <span class="lang-switch">
     <a href="/">EN</a> | <strong>DE</strong>
@@ -26,6 +25,7 @@ css: "/assets/style.css"
     <a href="https://github.com/Vidya-0119" target="_blank" class="btn">GitHub</a>
     <a href="https://www.salesforce.com/trailblazer/vkurada01" target="_blank" class="btn">Trailhead</a>
     <a href="https://public.tableau.com/app/profile/vidya.vardhini.kurada/vizzes" target="_blank" class="btn">Tableau</a>
+    <a href="/Vidya_Vardhini_Kurada_Data_Analyst_Intern_Latest.pdf">Lebenslauf</a>
   </div>
 </div>
 
