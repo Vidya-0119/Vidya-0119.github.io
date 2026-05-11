@@ -16,16 +16,20 @@ css: "/assets/style.css"
 </span>
 </nav>
 
-
 <div class="hero">
-  <!-- Upload your photo and replace photo.jpg -->
   <img src="/assets/Professional Pic.png" alt="Vidya Photo">
-
   <h1>Vidya Vardhini Kurada</h1>
   <p>Analytics Engineer • Data Analyst • CRM Data Specialist</p>
+
+  <div class="contact-buttons">
+    <a href="mailto:vidyavardhinikurada@gmail.com" class="btn">Email</a>
+    <a href="https://www.linkedin.com/in/vidya-vardhini-kurada-b51629168/" target="_blank" class="btn">LinkedIn</a>
+    <a href="https://github.com/Vidya-0119" target="_blank" class="btn">GitHub</a>
+    <a href="https://www.salesforce.com/trailblazer/vkurada01" target="_blank" class="btn">Trailhead</a>
+    <a href="https://public.tableau.com/app/profile/vidya.vardhini.kurada/vizzes" target="_blank" class="btn">Tableau</a>
+  </div>
 </div>
 
-<div class="divider"></div>
 
 
 <section>
