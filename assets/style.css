@@ -1,239 +1,83 @@
-/* ===========================
-   GLOBAL RESET & BASE
-   =========================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1f2937;
-  line-height: 1.6;
-
-  /* Global sea‑green → lavender gradient */
-  background: linear-gradient(135deg, #d9fff5, #c8e7ff, #e9d8ff);
-  background-attachment: fixed;
-  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  background: #0d0d0f;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-/* ===========================
-   MAIN CONTENT WRAPPER
-   =========================== */
-
-.main-container {
-  max-width: 900px;
-  margin: 0 auto;
+.dark {
+  background: #f5f5f5;
+  color: #111;
 }
 
-/* ===========================
-   HERO SECTION
-   =========================== */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
 
 .hero {
+  padding: 120px 40px 80px;
   text-align: center;
-  padding: 2.5rem 2rem;
-  margin-bottom: 2.5rem;
-
-  background: rgba(255, 255, 255, 0.72);
-  border-radius: 1.5rem;
-  backdrop-filter: blur(14px);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
 }
 
-.hero img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #e5d4ff;
-  box-shadow: 0 10px 30px rgba(88, 28, 135, 0.35);
-  margin-bottom: 1.2rem;
-}
-
-.hero h1 {
-  font-size: 2rem;
+#hero-title {
+  font-size: 48px;
   font-weight: 700;
-  color: #111827;
-  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
 }
 
-.hero p {
-  font-size: 1rem;
-  color: #4b5563;
+.subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.8;
 }
 
-/* ===========================
-   GENERIC SECTIONS
-   =========================== */
-
-section {
-  background: rgba(255, 255, 255, 0.78);
-  padding: 1.75rem 1.75rem 2rem;
-  margin-bottom: 2rem;
-  border-radius: 1.25rem;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  padding: 80px 40px;
 }
 
-section h2 {
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 1rem;
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* ===========================
-   PROJECTS SECTION (ANALYTICAL GRID)
-   =========================== */
-
-section.projects {
-  position: relative;
-
-  /* Soft glow base */
-  background:
-    radial-gradient(circle at center, #e0f7fa 0%, #c8e7ff 50%, #e9d8ff 100%);
-
-  /* Analytical grid overlay */
-  background-image:
-    radial-gradient(circle at center, #e0f7fa 0%, #c8e7ff 50%, #e9d8ff 100%),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-
-  background-size:
-    cover,
-    40px 40px,
-    40px 40px;
-
-  backdrop-filter: blur(12px);
-  overflow: hidden;
-}
-
-/* Subtle diagonal sheen */
-section.projects::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.12),
-    rgba(0, 0, 0, 0.02)
-  );
-  pointer-events: none;
-}
-
-/* Project cards inside the grid */
-.projects .project-card {
-  background: rgba(255, 255, 255, 0.88);
-  border-radius: 1rem;
-  padding: 1.25rem 1.4rem;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16);
-  margin-bottom: 1.1rem;
-}
-
-/* ===========================
-   LINKS & BUTTONS
-   =========================== */
-
-a {
-  color: #6d28d9;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4c1d95;
-}
-
-.button-primary {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0.65rem 1.4rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #6d28d9, #9333ea);
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 500;
-  box-shadow: 0 12px 30px rgba(109, 40, 217, 0.35);
-}
-
-.button-primary:hover {
-  filter: brightness(1.05);
-}
-
-/* ===========================
-   RESPONSIVE
-   =========================== */
-
-@media (min-width: 768px) {
-  .hero {
-    padding: 3rem 3rem;
-  }
-
-  section {
-    padding: 2rem 2.1rem 2.2rem;
-  }
-}
-.cert-grid {
+.cards {
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
 }
 
-.cert-card {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  text-align: center;
-  width: 180px;
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
-.cert-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.6rem;
-  border-radius: 0.5rem;
-}
-
-.lang-switch {
-  float: right;
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-.lang-switch a {
-  text-decoration: none;
-  color: #0077cc;
-}
-
-.lang-switch a:hover {
-  text-decoration: underline;
-}
-
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1rem;
-}
-
-.contact-buttons .btn {
-  background-color: #333;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.contact-buttons .btn:hover {
-  background-color: #555;
+.card:hover {
+  transform: scale(1.03);
 }
