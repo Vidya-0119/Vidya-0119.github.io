@@ -4,6 +4,9 @@ layout: default
 css: "/assets/style.css"
 ---
 
+<canvas id="bg"></canvas>
+<button id="theme-toggle" class="theme-btn">🌙</button>
+
 <nav>
   <a href="/de/">Startseite</a>
   <a href="/de/projects">Projekte</a>
@@ -14,9 +17,9 @@ css: "/assets/style.css"
   </span>
 </nav>
 
-<div class="hero">
+<div class="hero section">
   <img src="/assets/Professional Pic.png" alt="Vidya Photo">
-  <h1>Vidya Vardhini Kurada</h1>
+  <h1 id="hero-title"></h1>
   <p>Analytics Engineer • Data Analyst • CRM‑Datenexpertin</p>
 
   <div class="contact-buttons">
@@ -29,6 +32,7 @@ css: "/assets/style.css"
   </div>
 </div>
 
+<div class="section">
 <section>
 <h2>🔹 Über mich</h2>
 
@@ -48,7 +52,9 @@ css: "/assets/style.css"
 
 <p>Ich entwickle gerne Systeme, die Daten vertrauenswürdig, zugänglich und wirklich nützlich für Entscheidungsträger machen.</p>
 </section>
+</div>
 
+<div class="section">
 <section>
 <h2>🔹 Technische Fähigkeiten</h2>
 
@@ -58,7 +64,9 @@ css: "/assets/style.css"
 <p><strong>Tools:</strong> Git, Jira, Azure DevOps, Salesforce CRM</p>
 <p><strong>Sprachen:</strong> Englisch (C1), Deutsch (A1)</p>
 </section>
+</div>
 
+<div class="section">
 <section>
 <h2>🔹 Berufserfahrung</h2>
 
@@ -84,10 +92,13 @@ css: "/assets/style.css"
   <li>Auszeichnungen: <strong>„Most Valuable Player of the Month“</strong> und <strong>„Star Performer“</strong>.</li>
 </ul>
 </section>
+</div>
 
+<div class="section">
 <section class="projects">
 <h2>🔹 Projekte</h2>
-<div class="project-card">
+
+<div class="project-card card">
 
 <h3>E‑Commerce Umsatzoptimierung & RFM‑Segmentierung</h3>
 <p><em>PostgreSQL, Power BI</em></p>
@@ -122,18 +133,20 @@ css: "/assets/style.css"
 </ul>
 </div>
 </section>
+</div>
 
+<div class="section">
 <section id="certifications">
   <h2>Zertifikate</h2>
 
   <h3>Salesforce Zertifizierungen</h3>
   <div class="cert-grid">
-    <div class="cert-card">
+    <div class="cert-card card">
       <img src="/assets/2021-03_Badge_SF-Certified_Administrator_High-Res.png" alt="Salesforce Administrator Badge">
       <p><strong>Salesforce Certified Administrator</strong></p>
     </div>
 
-    <div class="cert-card">
+    <div class="cert-card card">
       <img src="/assets/2021-03_Badge_SF-Certified_Service-Cloud-Consultant_High-Res.png" alt="Salesforce Service Cloud Consultant Badge">
       <p><strong>Salesforce Certified Service Cloud Consultant</strong></p>
     </div>
@@ -141,7 +154,7 @@ css: "/assets/style.css"
 
   <h3>Data Engineering Zertifikate</h3>
   <div class="cert-grid">
-    <div class="cert-card">
+    <div class="cert-card card">
       <img src="/assets/astronomer certification image.png" alt="Apache Airflow Fundamentals Badge">
       <p><strong>Apache Airflow Fundamentals — Astronomer</strong></p>
     </div>
@@ -154,14 +167,18 @@ css: "/assets/style.css"
     <li><strong>Ethical Hacking (55 %)</strong> — IIT Kharagpur, NPTEL</li>
   </ul>
 </section>
+</div>
 
+<div class="section">
 <section>
 <h2>🔹 Ausbildung</h2>
 
 <p><strong>M.Sc. Informatik</strong> — Universität des Saarlandes, Deutschland</p>
 <p><strong>B.Tech Elektronik & Kommunikationstechnik</strong> — GITAM University, Indien</p>
 </section>
+</div>
 
+<div class="section">
 <section>
 <h2>🔹 Interessen</h2>
 
@@ -172,5 +189,8 @@ css: "/assets/style.css"
   <li>Reisen mit Freunden</li>
 </ul>
 </section>
+</div>
 
 <p><em>Diese Seite wurde mit GitHub Pages erstellt und wird unter <strong>kvvardhini.me</strong> gehostet.</em></p>
+
+<script src="/assets/script.js"></script>
